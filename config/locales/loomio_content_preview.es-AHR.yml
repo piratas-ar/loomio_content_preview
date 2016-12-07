@@ -1,0 +1,7 @@
+en:
+  loomio_content_preview:
+    preview_pane:
+      no_content: Nada para previsualizar
+      helptext: Tu comentario se verá así
+    preview_button:
+      preview: Previsualizar
