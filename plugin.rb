@@ -19,9 +19,9 @@ module Plugins
 
         plugin.use_test_route(:setup_comment_preview) do
           sign_in patrick
-          test_discussion.group.update(enable_experiments: true)
+          create_discussion.group.update(enable_experiments: true)
           @comment = CommentService.create(
-            comment: FactoryGirl.build(:comment, discussion: test_discussion),
+            comment: FactoryGirl.build(:comment, discussion: create_discussion),
             actor: patrick
           )
           redirect_to discussion_path(@comment.discussion)

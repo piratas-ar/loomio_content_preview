@@ -1,10 +1,10 @@
 .preview-button{role: "tablist"}
-  %button.lmo-btn.preview-button--first.preview-button--selected{ng-if: "!previewing", role: "tab", type: "button", aria-label: "{{ translations.edit }}"}
-    %span {{ translations.edit }}
-  %button.lmo-btn.preview-button--first.preview-button--unselected{ng-if: "previewing", role: "tab", type: "button", ng-click: "toggle()", aria-label: "{{ translations.edit }}"}
-    %span {{ translations.edit }}
+  %button.lmo-btn.preview-button--first.preview-button--selected{ng-if: "!previewing", role: "tab", type: "button", aria-label: "{{ 'common.action.edit' | translate }}"}
+    %span {{ 'common.action.edit' | translate }}
+  %button.lmo-btn.preview-button--first.preview-button--unselected{ng-if: "previewing", role: "tab", type: "button", ng-click: "toggle()", aria-label: "{{ 'common.action.edit' | translate }}"}
+    %span {{ 'common.action.edit' | translate }}
 
-  %button.lmo-btn.preview-button--selected{ng-if: "previewing", role: "tab", type: "button", aria-label: "{{ translations.preview }}"}
-    %span {{ translations.preview }}
-  %button.lmo-btn.preview-button--unselected{ng-if: "!previewing", role: "tab", type: "button", ng-click: "toggle()", aria-label: "{{ translations.preview }}"}
-    %span {{ translations.preview }}
+  %button.lmo-btn.preview-button--selected{ng-if: "previewing", role: "tab", type: "button", aria-label: "{{ 'loomio_content_preview.preview_button.preview' | translate }}"}
+    %span {{ 'loomio_content_preview.preview_button.preview' | translate }}
+  %button.lmo-btn.preview-button--unselected{ng-if: "!previewing", role: "tab", type: "button", ng-click: "toggle()", aria-label: "{{ 'loomio_content_preview.preview_button.preview' | translate }}"}
+    %span {{ 'loomio_content_preview.preview_button.preview' | translate }}
